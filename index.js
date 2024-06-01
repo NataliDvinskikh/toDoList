@@ -13,8 +13,11 @@ function createTask() {
 }
 
 function checkTask(e) {
+  if (e.target.tagName === "LI") {
     e.target.classList.toggle('toDoCompleted');
+  }
 }
+
 
 
 btn.addEventListener('click', createTask);
